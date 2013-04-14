@@ -1,10 +1,14 @@
 "vimrc configuration file 
 
+"Turn off compatibility with UNIX standard vi
+set nocompatible
+
 "Turn on syntax highlighting
 syntax on
 
-"Turn off compatibility with UNIX standard vi
-set nocompatible
+"Use pathogen for plugin management
+execute pathogen#infect()
+execute pathogen#helptags()
 
 "Filetype detection
 filetype on
@@ -74,4 +78,3 @@ let g:NERDTreeDirArrows=0
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 let g:Tex_DefaultTargetFormat='pdf'
-set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
