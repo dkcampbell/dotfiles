@@ -35,6 +35,9 @@ set incsearch
 "Speed up Scrolling
 set ttyfast
 
+"Hide buffers instead of closing
+set hidden
+
 "Allow cursor to be moved to any position within the file
 "set virtualedit=all
 
