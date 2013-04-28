@@ -29,6 +29,9 @@ set ruler
 "Stop text wrapping
 set nowrap
 
+"Show indicator for 80th column
+set colorcolumn=80
+
 "Allow :/ search to search while typing
 set incsearch
 
