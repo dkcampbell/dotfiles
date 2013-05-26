@@ -61,6 +61,7 @@ highlight SpellLocal term=underline cterm=underline
 
 "Disable swap files
 set nobackup
+set noswapfile
 
 "Add line numbers
 set nu
