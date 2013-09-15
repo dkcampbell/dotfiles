@@ -20,3 +20,6 @@
 	path = .vim/bundle/vim-clojure
 	url = https://github.com/vim-scripts/VimClojure.git
 	ignore = dirty
+[submodule ".vim/bundle/vim-unimpaired"]
+	path = .vim/bundle/vim-unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
