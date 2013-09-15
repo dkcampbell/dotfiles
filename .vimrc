@@ -20,6 +20,9 @@ set autoindent
 set shiftwidth=4                                                         
 set tabstop=4
 
+"Make indentions always be multiple of shiftwidth
+set shiftround
+
 "Don't show the matching (){}[] for files
 set noshowmatch
 
@@ -35,11 +38,17 @@ set colorcolumn=80
 "Allow :/ search to search while typing
 set incsearch
 
+"Ignore case if searching all lowercase only
+set smartcase
+
 "Speed up Scrolling
 set ttyfast
 
 "Hide buffers instead of closing
 set hidden
+
+"Highlight line cursor is on
+set cursorline
 
 "Allow cursor to be moved to any position within the file
 "set virtualedit=all
@@ -70,6 +79,12 @@ set nu
 autocmd Filetype c set omnifunc=ccomplete#Complete
 autocmd Filetype python set omnifunc=pythoncomplete#Complete
 set completeopt=longest,menuone
+
+"Keybindings for window navigation
+nn <C-h> <C-w>h
+nn <C-j> <C-w>j
+nn <C-k> <C-w>k
+nn <C-l> <C-w>l
 
 "Auto Completion of C++ Files
 filetype plugin on
