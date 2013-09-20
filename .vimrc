@@ -39,6 +39,7 @@ set colorcolumn=80
 set incsearch
 
 "Ignore case if searching all lowercase only
+set ignorecase
 set smartcase
 
 "Speed up Scrolling
