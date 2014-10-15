@@ -20,8 +20,9 @@ set autoindent
 set shiftwidth=4                                                         
 set tabstop=4
 
-"Special settings for working with C++
+"Special settings for working with C++?HTML
 au Filetype cpp set sw=2 ts=2 expandtab
+au Filetype html set sw=2 ts=2 expandtab
 
 "Make indentions always be multiple of shiftwidth
 set shiftround
