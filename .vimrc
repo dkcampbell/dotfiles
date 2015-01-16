@@ -16,6 +16,9 @@ filetype on
 "Allow for automatic handling of indention as well as use 'smart' indention
 set autoindent
 
+" I give in. Spaces have won.
+set expandtab
+
 "Set the width of indention and the width of a tab to 4 spaces
 set shiftwidth=4                                                         
 set tabstop=4
