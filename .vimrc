@@ -18,6 +18,7 @@ Plugin 'vim-latex/vim-latex.git'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-sensible.git'
+Plugin ''
 call vundle#end()
 
 "Instructions for getting Vundle running on a new computer:
