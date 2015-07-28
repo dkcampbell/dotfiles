@@ -6,9 +6,17 @@ set nocompatible
 "Turn on syntax highlighting
 syntax on
 
-"Use pathogen for plugin management
-execute pathogen#infect()
-execute pathogen#helptags()
+"Use Vundle for plugin management
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'SirVer/ultisnips'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'tpope/vim-fugitive.git'
+Plugin 'vim-latex/vim-latex.git'
+call vundle#end()
 
 "Filetype detection
 filetype on
