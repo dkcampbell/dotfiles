@@ -19,6 +19,10 @@ Plugin 'vim-latex/vim-latex.git'
 Plugin 'jlanzarotta/bufexplorer'
 call vundle#end()
 
+"Instructions for getting Vundle running on a new computer:
+"git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"Start vim and run :PluginInstall
+
 "Filetype detection
 filetype on
 			
