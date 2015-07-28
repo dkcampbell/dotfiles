@@ -14,9 +14,10 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/nerdtree.git'
-Plugin 'tpope/vim-fugitive.git'
 Plugin 'vim-latex/vim-latex.git'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'tpope/vim-fugitive.git'
+Plugin 'tpope/vim-sensible.git'
 call vundle#end()
 
 "Instructions for getting Vundle running on a new computer:
@@ -33,7 +34,7 @@ set autoindent
 set expandtab
 
 "Set the width of indention and the width of a tab to 4 spaces
-set shiftwidth=4                                                         
+set shiftwidth=4
 set tabstop=4
 
 "Special settings for different filetypes
