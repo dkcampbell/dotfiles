@@ -10,15 +10,20 @@ syntax on
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'SirVer/ultisnips'
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'vim-latex/vim-latex.git'
+if !has("win32")
+    Plugin 'Valloric/YouCompleteMe'
+endif
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-sensible.git'
-Plugin 'sjl/gundo.vim'
+Plugin 'vim-latex/vim-latex.git'
 call vundle#end()
 
 "Instructions for getting Vundle running on a new computer:
@@ -100,9 +105,9 @@ set noswapfile
 set nu
 
 "Auto Completion of Programming  Files
-autocmd Filetype c set omnifunc=ccomplete#Complete
-autocmd Filetype python set omnifunc=pythoncomplete#Complete
-set completeopt=longest,menuone
+"autocmd Filetype c set omnifunc=ccomplete#Complete
+"autocmd Filetype python set omnifunc=pythoncomplete#Complete
+"set completeopt=longest,menuone
 
 "Keybindings for window navigation
 nn <C-h> <C-w>h
@@ -111,13 +116,13 @@ nn <C-k> <C-w>k
 nn <C-l> <C-w>l
 
 "Auto Completion of C++ Files
-filetype plugin on
-set tags+=~/.vim/tags/cpp
+"filetype plugin on
+"set tags+=~/.vim/tags/cpp
 
 "Make vim pretty
 set t_Co=256
-set background=dark
 let g:solarized_termcolors=256
+set background=dark
 colorscheme solarized
 
 "Make gvim tolerable on Windows
@@ -127,6 +132,10 @@ endif
 
 "NERDTree plugin options
 let g:NERDTreeDirArrows=0
+
+"CtrlP plugin options
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 "LaTeX plugins
 set grepprg=grep\ -nH\ $*
