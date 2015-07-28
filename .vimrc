@@ -16,6 +16,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'vim-latex/vim-latex.git'
+Plugin 'jlanzarotta/bufexplorer'
 call vundle#end()
 
 "Filetype detection
