@@ -118,6 +118,11 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
+"Make gvim tolerable on Windows
+if has('gui_win32')
+   set guifont=Consolas:h11 
+endif
+
 "NERDTree plugin options
 let g:NERDTreeDirArrows=0
 
