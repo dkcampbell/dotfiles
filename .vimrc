@@ -27,7 +27,7 @@ set autoindent
 set list
 
 "Make indentions always be multiple of shiftwidth (only for "<" and ">"
-"commands
+"commands)
 set shiftround
 
 "Don't show the matching (){}[] for files
