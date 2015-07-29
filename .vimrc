@@ -80,9 +80,11 @@ highlight SpellLocal term=underline cterm=underline
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'SirVer/ultisnips'
-if !has("win32")
-    Plugin 'Valloric/YouCompleteMe'
+if v:version >= 704
+    Plugin 'SirVer/ultisnips'
+    if !has("win32")
+        Plugin 'Valloric/YouCompleteMe'
+    endif
 endif
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
