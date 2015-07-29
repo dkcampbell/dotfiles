@@ -93,7 +93,10 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-sensible.git'
+Plugin 'tpope/vim-surround.git'
 Plugin 'vim-latex/vim-latex.git'
+Plugin 'airblade/vim-gitgutter.git'
+Plugin 'easymotion/vim-easymotion.git'
 call vundle#end()
 
 "Instructions for getting Vundle running on a new computer:
@@ -131,7 +134,7 @@ let g:ctrlp_cmd = 'CtrlP'
 "Gundo Configuration
 map <Leader>u :GundoShow<CR>
 
-"LaTeX plugins
+"Vim-LaTeX Configuration
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 let g:Tex_DefaultTargetFormat='pdf'
