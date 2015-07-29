@@ -116,10 +116,14 @@ au Filetype html set sw=2 ts=2
 au BufNewFile,BufReadPost *.md set filetype=markdown set spell
 
 "Make vim pretty
-let g:solarized_termcolors=256
-set t_Co=256
-set background=dark
-colorscheme solarized
+try
+    let g:solarized_termcolors=256
+    set t_Co=256
+    set background=dark
+    colorscheme solarized
+catch /^Vim\%((\a\+)\)\=:E185/
+    "Couldn't find solarized. You probably need to get Vundle running
+endtry
 
 "Make gVim tolerable on Windows
 if has('gui_win32')
