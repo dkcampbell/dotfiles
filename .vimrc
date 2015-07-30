@@ -109,16 +109,14 @@ call vundle#end()
 filetype plugin indent on
 
 "Special settings for different filetypes
-au Filetype c,h set filetype=c.doxygen
-au Filetype cpp,hpp set filetype=cpp.doxygen
+au Filetype c,h set syntax=c.doxygen
+au Filetype cpp,hpp set syntax=cpp.doxygen
 au Filetype cpp set sw=2 ts=2
 au Filetype html set sw=2 ts=2
 au BufNewFile,BufReadPost *.md set filetype=markdown set spell
 
 "Make vim pretty
 try
-    let g:solarized_termcolors=256
-    set t_Co=256
     set background=dark
     colorscheme solarized
 catch /^Vim\%((\a\+)\)\=:E185/
