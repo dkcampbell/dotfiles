@@ -99,6 +99,7 @@ Plugin 'tpope/vim-surround.git'
 Plugin 'vim-latex/vim-latex.git'
 Plugin 'airblade/vim-gitgutter.git'
 Plugin 'easymotion/vim-easymotion.git'
+Plugin 'godlygeek/tabular.git'
 call vundle#end()
 
 "Instructions for getting Vundle running on a new computer:
