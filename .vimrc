@@ -111,12 +111,12 @@ call vundle#end()
 filetype plugin indent on
 
 "Special settings for different filetypes
-au Filetype c,h set syntax=c.doxygen set spell
-au Filetype cpp,hpp set syntax=cpp.doxygen set spell
+au Filetype c,h set syntax=c.doxygen,set spell
+au Filetype cpp,hpp set syntax=cpp.doxygen,set spell
 au Filetype cpp set sw=2 ts=2
 au Filetype html set sw=2 ts=2
 au Filetype tex set spell
-au BufNewFile,BufReadPost *.md set filetype=markdown set spell
+au BufNewFile,BufReadPost *.md set filetype=markdown,set spell
 
 "Make vim pretty
 try
