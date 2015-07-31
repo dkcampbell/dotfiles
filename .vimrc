@@ -64,7 +64,7 @@ nn <C-j> <C-w>j
 nn <C-k> <C-w>k
 nn <C-l> <C-w>l
 
-"Default spell checking options
+"Defaul spell checkmng options
 set nospell
 set spelllang=en_us
 highlight clear SpellBad
@@ -145,3 +145,8 @@ map <Leader>u :GundoShow<CR>
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 let g:Tex_DefaultTargetFormat='pdf'
+
+"YouCompleteMe Configuration
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
