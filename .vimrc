@@ -119,7 +119,8 @@ au Filetype cpp,hpp set syntax=cpp.doxygen,set spell
 au Filetype cpp set sw=2 ts=2
 au Filetype html set sw=2 ts=2
 au Filetype tex set spell
-au BufNewFile,BufReadPost *.md set filetype=markdown,set spell
+au Filetype markdown set spell
+au BufNewFile,BufReadPost *.md set filetype=markdown
 
 "Make vim pretty
 try
