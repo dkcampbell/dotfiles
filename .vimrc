@@ -76,6 +76,9 @@ highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
+"Enable mouse support
+set mouse=a
+
 "Use Vundle for plugin management
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
