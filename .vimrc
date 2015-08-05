@@ -85,6 +85,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 if v:version >= 704
     Plugin 'SirVer/ultisnips'
+    Plugin 'honza/vim-snippets'
     if !has("win32")
         Plugin 'Valloric/YouCompleteMe'
     endif
@@ -94,16 +95,17 @@ Plugin 'bling/vim-airline'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree.git'
+Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/gundo.vim'
-Plugin 'tpope/vim-fugitive.git'
-Plugin 'tpope/vim-sensible.git'
-Plugin 'tpope/vim-surround.git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-dispatch'
-Plugin 'vim-latex/vim-latex.git'
-Plugin 'airblade/vim-gitgutter.git'
-Plugin 'easymotion/vim-easymotion.git'
-Plugin 'godlygeek/tabular.git'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-latex/vim-latex'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'godlygeek/tabular'
 call vundle#end()
 
 "Instructions for getting Vundle running on a new computer:
@@ -143,14 +145,16 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 "Gundo Configuration
-map <Leader>u :GundoShow<CR>
+map <Leader>u :GundoToggle<CR>
 
 "Vim-LaTeX Configuration
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
-let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_DefaultTargetFormat = 'pdf'
 
 "YouCompleteMe Configuration
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
+"Git-Gutter configuration
+let g:gitgutter_sign_column_always = 1
