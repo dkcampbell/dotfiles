@@ -141,20 +141,20 @@ endif
 let g:NERDTreeDirArrows=0
 
 "CtrlP plugin options
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
 
 "Gundo Configuration
 map <Leader>u :GundoToggle<CR>
 
 "Vim-LaTeX Configuration
 set grepprg=grep\ -nH\ $*
-let g:tex_flavor = "latex"
-let g:Tex_DefaultTargetFormat = 'pdf'
+let g:tex_flavor="latex"
+let g:Tex_DefaultTargetFormat='pdf'
 
 "YouCompleteMe Configuration
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf=0
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
 "Git-Gutter configuration
-let g:gitgutter_sign_column_always = 1
+let g:gitgutter_sign_column_always=1
