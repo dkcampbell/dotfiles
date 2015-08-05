@@ -83,7 +83,7 @@ set mouse=a
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-if v:version >= 704
+if has('python')
     Plugin 'SirVer/ultisnips'
     Plugin 'honza/vim-snippets'
     if !has("win32")
