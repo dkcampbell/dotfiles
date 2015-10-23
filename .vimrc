@@ -117,7 +117,7 @@ filetype plugin indent on
 
 "Special settings for different filetypes
 au Filetype c,h set syntax=c.doxygen
-au Filetype c,h set set spell
+au Filetype c,h set spell
 au Filetype cpp,hpp set syntax=cpp.doxygen
 au Filetype cpp,hpp set spell
 au Filetype cpp set sw=2 ts=2
