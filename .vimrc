@@ -94,7 +94,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'jlanzarotta/bufexplorer'
-Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-fugitive'
@@ -104,7 +103,6 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-latex/vim-latex'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'easymotion/vim-easymotion'
 Plugin 'godlygeek/tabular'
 call vundle#end()
 
@@ -118,7 +116,6 @@ filetype plugin indent on
 "Special settings for different filetypes
 au Filetype c,h set spell
 au Filetype cpp,hpp set spell
-au Filetype cpp set sw=2 ts=2
 au Filetype html set sw=2 ts=2
 au Filetype css set sw=2 ts=2
 au Filetype tex set spell
@@ -140,10 +137,6 @@ endif
 
 "NERDTree plugin options
 let g:NERDTreeDirArrows=0
-
-"CtrlP plugin options
-let g:ctrlp_map='<c-p>'
-let g:ctrlp_cmd='CtrlP'
 
 "Gundo Configuration
 map <Leader>u :GundoToggle<CR>
