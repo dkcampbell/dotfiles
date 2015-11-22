@@ -90,20 +90,21 @@ if has('python')
         Plugin 'Valloric/YouCompleteMe'
     endif
 endif
+Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'gmarik/Vundle.vim'
+Plugin 'godlygeek/tabular'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/gundo.vim'
+Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-latex/vim-latex'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'godlygeek/tabular'
+Plugin 'Raimondi/delimitMate'
 call vundle#end()
 
 "Instructions for getting Vundle running on a new computer:
