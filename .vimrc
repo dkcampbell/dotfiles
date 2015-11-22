@@ -122,6 +122,9 @@ au Filetype tex set spell
 au Filetype markdown set spell
 au BufNewFile,BufReadPost *.md set filetype=markdown
 
+"Shortcut to trim whitespace
+map <Leader>tr :%s/\s\+$//<CR>
+
 "Make vim pretty
 try
     set background=dark
