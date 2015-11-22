@@ -22,6 +22,7 @@ set tabstop=4
 
 "Allow for automatic handling of indention as well as use 'smart' indention
 set autoindent
+set smartindent
 
 "Display trailing whitespace
 set list
@@ -116,7 +117,9 @@ filetype plugin indent on
 
 "Special settings for different filetypes
 au Filetype c,h set spell
+au Filetype c,h set cindent
 au Filetype cpp,hpp set spell
+au Filetype cpp,hpp set cindent
 au Filetype html set sw=2 ts=2
 au Filetype css set sw=2 ts=2
 au Filetype tex set spell
