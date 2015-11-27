@@ -129,6 +129,10 @@ au BufNewFile,BufReadPost *.md set filetype=markdown
 "Shortcut to trim whitespace
 map <Leader>tr :%s/\s\+$//<CR>
 
+"Useful maps for putting semicolons at the end of a line
+nmap ;; A;<Esc>
+imap ;; <Esc>A;
+
 "Make vim pretty
 try
     set background=dark
