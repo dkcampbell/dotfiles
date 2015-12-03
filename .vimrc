@@ -146,9 +146,6 @@ if has('gui_win32')
    set guifont=Consolas:h11
 endif
 
-"NERDTree plugin options
-let g:NERDTreeDirArrows=0
-
 "Gundo Configuration
 map <Leader>u :GundoToggle<CR>
 
