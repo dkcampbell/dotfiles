@@ -125,6 +125,7 @@ au Filetype css set sw=2 ts=2
 au Filetype tex set spell
 au Filetype markdown set spell
 au BufNewFile,BufReadPost *.md set filetype=markdown
+au BufNewFile,BufReadPost *.twig set filetype=html
 
 "Shortcut to trim whitespace
 map <Leader>tr :%s/\s\+$//<CR>
