@@ -184,7 +184,7 @@ let g:gitgutter_sign_column_always=1
 au Filetype markdown set spell
 au Filetype markdown set conceallevel=2
 au Filetype markdown set textwidth=78
-au BufNewFile,BufReadPost *.md set filetype=markdown
+au Filetype BufNewFile,BufReadPost *.md set filetype=markdown
 let g:vim_markdown_folding_disabled=1
 let g:vim_markdown_math=1
 let g:vim_markdown_frontmatter=1
