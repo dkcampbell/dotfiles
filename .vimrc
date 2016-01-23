@@ -88,6 +88,7 @@ if has('python')
     Plugin 'SirVer/ultisnips'
     Plugin 'honza/vim-snippets'
     if !has("win32")
+        Plugin 'dkcampbell/vap'
         Plugin 'Valloric/YouCompleteMe'
     endif
 endif
