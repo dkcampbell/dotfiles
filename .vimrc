@@ -98,6 +98,7 @@ Plugin 'bling/vim-airline'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'sjl/gundo.vim'
@@ -124,8 +125,6 @@ au Filetype cpp,hpp set cindent
 au Filetype html set sw=2 ts=2
 au Filetype css set sw=2 ts=2
 au Filetype tex set spell
-au Filetype markdown set spell
-au BufNewFile,BufReadPost *.md set filetype=markdown
 au BufNewFile,BufReadPost *.twig set filetype=jinja
 
 "Shortcut to trim whitespace
@@ -180,3 +179,12 @@ set completeopt-=preview
 
 "Git-Gutter configuration
 let g:gitgutter_sign_column_always=1
+
+"Markdown configuration -- both general and for vim-markdown plugin
+au Filetype markdown set spell
+au Filetype markdown set conceallevel=2
+au Filetype markdown set textwidth=78
+au BufNewFile,BufReadPost *.md set filetype=markdown
+let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_math=1
+let g:vim_markdown_frontmatter=1
