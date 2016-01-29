@@ -190,3 +190,9 @@ au Filetype BufNewFile,BufReadPost *.md set filetype=markdown
 let g:vim_markdown_folding_disabled=1
 let g:vim_markdown_math=1
 let g:vim_markdown_frontmatter=1
+
+"Vim-airline configuration
+"For the fancy fonts to work properly clone this repository:
+"https://github.com/powerline/fonts.git and run the install.sh script
+let g:airline_powerline_fonts = 1
+
