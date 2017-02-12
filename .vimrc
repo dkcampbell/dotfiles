@@ -92,15 +92,14 @@ if has('python')
         Plugin 'Valloric/YouCompleteMe'
     endif
 endif
-Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'sjl/gundo.vim'
@@ -109,7 +108,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-latex/vim-latex'
+Plugin 'vimwiki/vimwiki'
 call vundle#end()
 
 "Instructions for getting Vundle running on a new computer:
@@ -194,5 +195,10 @@ let g:vim_markdown_frontmatter=1
 "Vim-airline configuration
 "For the fancy fonts to work properly clone this repository:
 "https://github.com/powerline/fonts.git and run the install.sh script
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
 
+"Vimwiki configuration
+let wiki_1 = {}
+let wiki_1.path = '~/Dropbox/vimwiki/wiki/'
+let wiki_1.path_html = '~/Dropbox/vimwiki/html'
+let g:vimwiki_list = [wiki_1]
