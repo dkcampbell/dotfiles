@@ -109,7 +109,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-latex/vim-latex'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'vimwiki/vimwiki'
 call vundle#end()
 
@@ -152,11 +152,6 @@ endif
 
 "Gundo Configuration
 map <Leader>u :GundoToggle<CR>
-
-"Vim-LaTeX Configuration
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor="latex"
-let g:Tex_DefaultTargetFormat='pdf'
 
 "Ultisnips Configuration
 "Taken from https://github.com/Valloric/YouCompleteMe/issues/420
